@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Varun Deshmukh | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script src="https://unpkg.com/typewriter-effect@2.18.1/dist/core.js"></script>
+  <!-- AOS Animations -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-rhNnJw9XP0eU5Xc5x/fSx6cw/..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<!-- Toast Success Message -->
+<div id="toast-success" class="hidden fixed bottom-6 right-6 z-50 bg-green-600 text-white px-6 py-4 rounded-lg shadow-lg transition-opacity duration-500">
+  ✅ Message sent successfully!
+</div>
+
+</head>
+<body class="bg-[#0f172a] text-white font-sans tracking-wide">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 w-full bg-[#0f172a]/80 backdrop-blur-md z-50 shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-indigo-400">Varun Girish Deshmukh</h1>
+      <nav>
+        <ul class="flex space-x-6 text-lg">
+          <li><a href="#about" class="hover:text-indigo-400">About</a></li>
+          <li><a href="#education" class="hover:text-indigo-400">Education</a></li>
+          <li><a href="#skills" class="hover:text-indigo-400">Skills</a></li>
+          <a href="#certificates" class="hover:text-indigo-400 transition">Certificates</a>
+          <li><a href="#projects" class="hover:text-indigo-400">Projects</a></li>
+          <li><a href="#startup" class="hover:text-indigo-400 transition">Startup</a></li>
+          <li><a href="#contact" class="hover:text-indigo-400">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center px-6 pt-32 pb-20 bg-gradient-to-br from-gray-900 to-black overflow-hidden transition-colors duration-300">
+  <!-- Animated Background SVG Wave -->
+  <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none pointer-events-none">
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none" class="w-full h-16">
+      <path d="M0.00,49.98 C150.00,150.00 349.78,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+        style="stroke: none; fill: #0f172a;"></path>
+    </svg>
+  </div>
+
+  <div class="max-w-4xl text-center relative z-10" data-aos="fade-up">
+    <!-- Typing Text -->
+    <h2 class="text-4xl md:text-6xl font-bold leading-tight mb-4 text-white">
+      Hey, I'm <span class="text-indigo-400">Varun Deshmukh</span>
+    </h2>
+    <p id="typing-text" class="text-lg md:text-xl text-gray-300 mb-6">
+      <!-- Typing text will appear here -->
+    </p>
+
+    <!-- Call to Action Buttons -->
+    <div class="mt-6 flex justify-center flex-wrap gap-4" data-aos="fade-up" data-aos-delay="300">
+      <a href="#projects"
+        class="bg-indigo-500 hover:bg-indigo-600 transition px-6 py-3 rounded-full font-semibold text-white shadow-md hover:shadow-indigo-500/40 animate-pulse">
+        🚀 View My Work
+      </a>
+      <a href="assets/Varun_Deshmukh_Resume.pdf" download
+        class="bg-white text-black font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-200 transition">
+        📄 Download Resume
+      </a>
+      <a href="https://github.com/varun08032004" target="_blank"
+        class="bg-gray-800 text-white font-semibold px-6 py-3 rounded-full hover:bg-gray-700 transition">
+        💻 GitHub
+      </a>
+    </div>
+  </div>
+
+  <!-- Scroll Down Icon -->
+  <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+    <i class="fas fa-chevron-down text-2xl"></i>
+  </div>
+
+  <!-- Typewriter Effect Script -->
+  <script>
+    const typewriter = new Typewriter('#typing-text', {
+      loop: true,
+      delay: 75,
+    });
+
+    typewriter
+      .typeString('A passionate Computer Engineering student')
+      .pauseFor(2000)
+      .deleteAll()
+      .typeString('Exploring Data Engineering and Blockchain')
+      .pauseFor(2000)
+      .deleteAll()
+      .typeString('Building with React, Solidity, and more')
+      .pauseFor(2000)
+      .start();
+  </script>
+</section>
+
+ <!-- About Section -->
+<section id="about" class="py-24 bg-[#0f172a] px-6">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center" data-aos="fade-up">
+
+    <!-- Animated Blob with Image and Glow -->
+    <div class="flex justify-center relative">
+      <!-- Glow Background -->
+      <div class="absolute w-72 h-72 md:w-96 md:h-96 bg-indigo-500 blur-3xl rounded-full opacity-30 animate-pulse"></div>
+
+      <!-- SVG Blob with Clipped Image -->
+      <div class="relative w-64 h-64 md:w-80 md:h-80 z-10">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+          <defs>
+            <clipPath id="blobClipPath">
+              <path id="blobPath"
+                d="M46.4,-70.3C59.7,-61.7,69.2,-48.3,74.1,-34.5C79,-20.7,79.2,-6.6,75.4,6.8C71.6,20.1,63.9,32.7,54.5,44.4C45,56.1,33.9,66.9,20.7,71.6C7.6,76.2,-7.7,74.6,-21.4,69.1C-35.1,63.6,-47.2,54.2,-55.5,42.5C-63.9,30.8,-68.5,16.9,-67.3,3.9C-66.1,-9.1,-59.1,-18.1,-53.5,-28.2C-47.8,-38.2,-43.5,-49.2,-35.3,-59.3C-27.1,-69.4,-13.6,-78.6,1.5,-81C16.6,-83.4,33.2,-79,46.4,-70.3Z"
+                transform="translate(100 100) scale(1.35)" />
+            </clipPath>
+          </defs>
+          <image href="assets/profile.jpg" clip-path="url(#blobClipPath)" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+        </svg>
+      </div>
+    </div>
+
+    <!-- About Content -->
+    <div>
+      <h3 class="text-3xl md:text-4xl font-bold mb-4 text-indigo-400">About Me</h3>
+      <p class="text-gray-300 text-lg leading-relaxed mb-4">
+        I’m a motivated and adaptable <span class="text-indigo-300 font-semibold">Computer Engineering student</span> with hands-on experience in <span class="text-indigo-300 font-semibold">data engineering, software testing, and blockchain development</span>.
+      </p>
+      <p class="text-gray-400 leading-relaxed mb-4">
+        During my internships at <span class="font-semibold text-indigo-300">ChainSys</span> and <span class="font-semibold text-indigo-300">Prodigy InfoTech</span>, I worked on <span class="italic">ETL pipelines, data visualization (Power BI & Tableau), and test case design</span> for web applications.
+      </p>
+      <p class="text-gray-400 leading-relaxed mb-4">
+        I’m currently diving deep into <span class="text-indigo-300 font-semibold">blockchain technology</span>, building smart contracts using <span class="text-indigo-300 font-semibold">Solidity</span> and expanding my stack with <span class="font-semibold text-indigo-300">React, JavaScript, SQL</span> and modern tools.
+      </p>
+      <p class="text-gray-400 leading-relaxed">
+        I’m passionate about crafting efficient, user-focused solutions and actively looking for opportunities in <span class="text-indigo-300 font-semibold">data engineering, software QA, and Web3 development</span>.
+        Let’s connect and build something impactful together!
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Education Section -->
+<section id="education" class="py-24 bg-[#0f172a] px-6">
+  <div class="max-w-6xl mx-auto text-center">
+    <h3 class="text-4xl font-bold text-indigo-400 mb-12" data-aos="fade-up">🎓 Education</h3>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-left">
+
+      <!-- Degree -->
+      <div class="bg-[#1e293b] p-6 rounded-lg shadow-lg hover:shadow-indigo-500/30 transition duration-300 hover:scale-105"
+           data-aos="fade-up" data-aos-delay="100">
+        <div class="flex items-center mb-3">
+          <span class="text-2xl mr-3">🎓</span>
+          <h4 class="text-xl font-semibold text-white">B.Tech in Computer Engineering</h4>
+        </div>
+        <p class="text-gray-400 text-sm mb-1">Pimpri Chinchwad College of Engineering, Pune</p>
+        <p class="text-gray-500 text-sm italic">2022 – 2026 | CGPA: 6.1</p>
+      </div>
+
+      <!-- HSC -->
+      <div class="bg-[#1e293b] p-6 rounded-lg shadow-lg hover:shadow-indigo-500/30 transition duration-300 hover:scale-105"
+           data-aos="fade-up" data-aos-delay="200">
+        <div class="flex items-center mb-3">
+          <span class="text-2xl mr-3">🏫</span>
+          <h4 class="text-xl font-semibold text-white">Higher Secondary (HSC)</h4>
+        </div>
+        <p class="text-gray-400 text-sm mb-1">Matoshri Asarabai Darade Junior College, Nashik</p>
+        <p class="text-gray-500 text-sm italic">Passed: 2022 | Percentage: 71.33%</p>
+      </div>
+
+      <!-- SSC -->
+      <div class="bg-[#1e293b] p-6 rounded-lg shadow-lg hover:shadow-indigo-500/30 transition duration-300 hover:scale-105"
+           data-aos="fade-up" data-aos-delay="300">
+        <div class="flex items-center mb-3">
+          <span class="text-2xl mr-3">🏫</span>
+          <h4 class="text-xl font-semibold text-white">Secondary School (CBSE)</h4>
+        </div>
+        <p class="text-gray-400 text-sm mb-1">Nashik Cambridge CBSE School</p>
+        <p class="text-gray-500 text-sm italic">Passed: 2020 | Percentage: 90.6%</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="py-24 bg-[#1e293b] px-6">
+  <div class="max-w-6xl mx-auto text-center">
+    <h3 class="text-4xl font-bold text-indigo-400 mb-12" data-aos="fade-up">My Tech Stack</h3>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-10 justify-items-center" data-aos="fade-up" data-aos-delay="100">
+
+      <!-- Skill Card -->
+      <div class="flex flex-col items-center space-y-3 hover:scale-110 transition-transform duration-300">
+        <i class="fab fa-js-square text-yellow-400 text-6xl"></i>
+        <p class="text-white text-lg">JavaScript</p>
+      </div>
+
+      <div class="flex flex-col items-center space-y-3 hover:scale-110 transition-transform duration-300">
+        <i class="fab fa-react text-blue-400 text-6xl"></i>
+        <p class="text-white text-lg">React</p>
+      </div>
+
+      <div class="flex flex-col items-center space-y-3 hover:scale-110 transition-transform duration-300">
+        <i class="fas fa-database text-green-400 text-6xl"></i>
+        <p class="text-white text-lg">SQL</p>
+      </div>
+
+      <div class="flex flex-col items-center space-y-3 hover:scale-110 transition-transform duration-300">
+        <i class="fas fa-chart-line text-pink-400 text-6xl"></i>
+        <p class="text-white text-lg">Power BI</p>
+      </div>
+
+      <div class="flex flex-col items-center space-y-3 hover:scale-110 transition-transform duration-300">
+        <i class="fas fa-vial text-indigo-300 text-6xl"></i>
+        <p class="text-white text-lg">Software Testing</p>
+      </div>
+
+      <div class="flex flex-col items-center space-y-3 hover:scale-110 transition-transform duration-300">
+        <i class="fab fa-ethereum text-indigo-400 text-6xl"></i>
+        <p class="text-white text-lg">Solidity</p>
+      </div>
+
+      <div class="flex flex-col items-center space-y-3 hover:scale-110 transition-transform duration-300">
+        <i class="fas fa-cubes text-purple-400 text-6xl"></i>
+        <p class="text-white text-lg">Blockchain</p>
+      </div>
+
+      <div class="flex flex-col items-center space-y-3 hover:scale-110 transition-transform duration-300">
+        <i class="fas fa-tools text-gray-300 text-6xl"></i>
+        <p class="text-white text-lg">ETL Tools</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Certificates Section -->
+<section id="certificates" class="py-24 bg-[#0f172a] px-6">
+  <div class="max-w-6xl mx-auto text-center">
+    <h3 class="text-4xl font-bold text-indigo-400 mb-12" data-aos="fade-up">📜 Certifications</h3>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8" data-aos="fade-up" data-aos-delay="100">
+
+      <!-- Certificate Card -->
+      <div class="bg-[#1e293b] p-6 rounded-lg shadow-lg hover:shadow-indigo-500/30 transition duration-300 hover:scale-105">
+        <h4 class="text-xl font-semibold text-white mb-2">Lean Six Sigma White Belt</h4>
+        <p class="text-gray-400 text-sm mb-3">Certified by [C.S.S.C] - 2024</p>
+        <a href="public/certificates/Official_Certification_Issued_Six_Sigma_White_Belt_Certification.pdf" target="_blank" class="text-indigo-400 hover:underline">View Certificate</a>
+      </div>
+
+      <div class="bg-[#1e293b] p-6 rounded-lg shadow-lg hover:shadow-indigo-500/30 transition duration-300 hover:scale-105">
+        <h4 class="text-xl font-semibold text-white mb-2">Blockchain Fundamentals</h4>
+        <p class="text-gray-400 text-sm mb-3">Certified by [Udemy] - 2025</p>
+        <a href="public/certificates/Udemy_Blockchain_A-Z_Certification.pdf" target="_blank" class="text-indigo-400 hover:underline">View Certificate</a>
+      </div>
+
+      <div class="bg-[#1e293b] p-6 rounded-lg shadow-lg hover:shadow-indigo-500/30 transition duration-300 hover:scale-105">
+        <h4 class="text-xl font-semibold text-white mb-2">Ethereum & Solidity Development</h4>
+        <p class="text-gray-400 text-sm mb-3">Certified by [Udemy] - 2025</p>
+        <a href="public/certificates/Udemy_Ethereum_and_Solidity_Developer_Certificate.pdf" target="_blank" class="text-indigo-400 hover:underline">View Certificate</a>
+      </div>
+
+      <div class="bg-[#1e293b] p-6 rounded-lg shadow-lg hover:shadow-indigo-500/30 transition duration-300 hover:scale-105">
+        <h4 class="text-xl font-semibold text-white mb-2">ML Bootcamp</h4>
+        <p class="text-gray-400 text-sm mb-3">Certified by [C-DAC] - 2025</p>
+        <a href="public/certificates/C-DAC_AI_Bootcamp_Certification.pdf" target="_blank" class="text-indigo-400 hover:underline">View Certificate</a>
+      </div>
+
+      <div class="bg-[#1e293b] p-6 rounded-lg shadow-lg hover:shadow-indigo-500/30 transition duration-300 hover:scale-105">
+        <h4 class="text-xl font-semibold text-white mb-2">Chainsys Internship LOR</h4>
+        <p class="text-gray-400 text-sm mb-3">Letter of Recommendation - Chainsys</p>
+        <a href="assets/Varun_Chainsys_LOR.pdf" target="_blank" class="text-indigo-400 hover:underline">View LOR</a>
+      </div>
+
+      <div class="bg-[#1e293b] p-6 rounded-lg shadow-lg hover:shadow-indigo-500/30 transition duration-300 hover:scale-105">
+        <h4 class="text-xl font-semibold text-white mb-2">Digital Marketing Certification</h4>
+        <p class="text-gray-400 text-sm mb-3">Certified by [SimpliLearn] - 2024</p>
+        <a href="public/certificates/Official_Digital_Marketing_Strategy_Certification.pdf" target="_blank" class="text-indigo-400 hover:underline">View Certificate</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="py-24 bg-[#0f172a] px-6 text-white">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-4xl font-bold text-indigo-400 text-center mb-16" data-aos="fade-up">🚧 My Projects</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+      <!-- EtherTrack -->
+      <div class="bg-[#1e293b] p-6 rounded-lg shadow-lg hover:shadow-indigo-500/30 transition duration-300 hover:scale-105" data-aos="fade-up">
+        <h3 class="text-xl font-semibold text-white mb-2">EtherTrack</h3>
+        <p class="text-gray-400 text-sm mb-3">
+          A blockchain-based carbon emission tracking and carbon credits trading platform using smart contracts and Ethereum.
+        </p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="bg-indigo-600 text-sm px-2 py-1 rounded">React</span>
+          <span class="bg-green-600 text-sm px-2 py-1 rounded">Solidity</span>
+          <span class="bg-blue-600 text-sm px-2 py-1 rounded">MongoDB</span>
+          <span class="bg-gray-700 text-sm px-2 py-1 rounded">Tailwind</span>
+        </div>
+        <div class="flex gap-4">
+          <a href="#" class="text-indigo-400 hover:underline">🔗 Live Demo</a>
+          <a href="https://github.com/varun08032004/EtherTrack" target="_blank" class="text-gray-400 hover:underline">📂 GitHub</a>
+        </div>
+      </div>
+
+      <!-- Business Dashboards -->
+      <div class="bg-[#1e293b] p-6 rounded-lg shadow-lg hover:shadow-indigo-500/30 transition duration-300 hover:scale-105" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="text-xl font-semibold text-white mb-2">Business Dashboards</h3>
+        <p class="text-gray-400 text-sm mb-3">
+          Interactive dashboards for sales, revenue, and operations using Power BI and Tableau with clean ETL data pipelines.
+        </p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="bg-yellow-500 text-sm px-2 py-1 rounded">Power BI</span>
+          <span class="bg-purple-600 text-sm px-2 py-1 rounded">Tableau</span>
+          <span class="bg-pink-600 text-sm px-2 py-1 rounded">ETL</span>
+          <span class="bg-blue-500 text-sm px-2 py-1 rounded">SQL</span>
+        </div>
+        <div class="flex gap-4">
+          <a href="#" class="text-indigo-400 hover:underline">🔗 Live Demo</a>
+          <a href="https://github.com/varun08032004/Dashboards" target="_blank" class="text-gray-400 hover:underline">📂 GitHub</a>
+        </div>
+      </div>
+
+      <!-- Sympath AI -->
+      <div class="bg-[#1e293b] p-6 rounded-lg shadow-lg hover:shadow-indigo-500/30 transition duration-300 hover:scale-105" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="text-xl font-semibold text-white mb-2">Sympath AI</h3>
+        <p class="text-gray-400 text-sm mb-3">
+          A health-focused chatbot that assists users with basic diagnosis, symptoms check, and provides medical guidance using AI.
+        </p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="bg-blue-500 text-sm px-2 py-1 rounded">Python</span>
+          <span class="bg-red-500 text-sm px-2 py-1 rounded">Chatbot</span>
+          <span class="bg-green-500 text-sm px-2 py-1 rounded">Machine Learning</span>
+          <span class="bg-gray-700 text-sm px-2 py-1 rounded">Flask</span>
+        </div>
+        <div class="flex gap-4">
+          <a href="#" class="text-indigo-400 hover:underline">🔗 Live Demo</a>
+          <a href="https://github.com/varun08032004/SympathAI" target="_blank" class="text-gray-400 hover:underline">📂 GitHub</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="startup" class="py-20 bg-gradient-to-br from-[#0F172A] to-[#1E293B] text-white">
+  <div class="container mx-auto px-6 text-center" data-aos="fade-up">
+
+    <!-- Heading -->
+    <h2 class="text-4xl md:text-5xl font-bold mb-2">
+      Startup Vision: <span class="text-blue-400">EI</span>
+    </h2>
+    <p class="text-sm text-gray-400 italic mb-6">*in development</p>
+
+    <!-- Description -->
+    <p class="max-w-3xl mx-auto text-lg md:text-xl text-gray-300 mb-10 leading-relaxed">
+      <span class="font-medium text-white">EI (EtherIgnis)</span> is a vision for a future-focused blockchain venture,
+      aimed at building decentralized solutions that empower sustainability, transparency, and real-world environmental impact.
+      <br class="hidden md:block" />
+      The core concept, <span class="text-blue-300 font-semibold">EtherTrack</span>, provides a smart-contract-powered platform to track and trade carbon credits securely and efficiently.
+    </p>
+
+    <!-- CTA Buttons -->
+    <div class="flex flex-col sm:flex-row justify-center items-center gap-6" data-aos="fade-up" data-aos-delay="200">
+      <a href="#projects" class="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-full font-semibold text-white shadow-md hover:shadow-blue-500/40 transition-all duration-300">
+        🌿 Explore EtherTrack
+      </a>
+      <a href="#contact" class="bg-white text-gray-900 font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition-all duration-300">
+        🔗 Connect with Me
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-24 bg-[#0f172a] px-6">
+  <div class="max-w-3xl mx-auto text-center">
+    <h2 class="text-4xl font-bold text-indigo-400 mb-10">Contact Me</h2>
+
+    <form 
+      action="https://formsubmit.co/ajax/varun.deshmukh2004@gmail.com" 
+      method="POST" 
+      class="space-y-6 text-left"
+    >
+      <!-- HONEYPOT FIELD FOR SPAM PREVENTION -->
+      <input type="hidden" name="_honey" style="display:none">
+
+      <!-- DISABLE CAPTCHA -->
+      <input type="hidden" name="_captcha" value="false">
+
+      <!-- REDIRECT TO THANK YOU PAGE OR SHOW MESSAGE -->
+      
+      <div>
+        <label for="name" class="block mb-2 text-sm font-medium text-white">Name*</label>
+        <input type="text" id="name" name="name" required placeholder="Your Name"
+          class="w-full px-4 py-3 bg-gray-800 text-white rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+      </div>
+
+      <div>
+        <label for="email" class="block mb-2 text-sm font-medium text-white">Email*</label>
+        <input type="email" id="email" name="email" required placeholder="you@email.com"
+          class="w-full px-4 py-3 bg-gray-800 text-white rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+      </div>
+
+      <div>
+        <label for="subject" class="block mb-2 text-sm font-medium text-white">Subject*</label>
+        <input type="text" id="subject" name="subject" required placeholder="Subject"
+          class="w-full px-4 py-3 bg-gray-800 text-white rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+      </div>
+
+      <div>
+        <label for="message" class="block mb-2 text-sm font-medium text-white">Message*</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."
+          class="w-full px-4 py-3 bg-gray-800 text-white rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+      </div>
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <div>
+        <button type="submit"
+          class="w-full bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-3 rounded-md transition duration-300">
+          Send Message
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+  <!-- AOS Animation JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+  <script src="js/scripts.js"></script>
+
+  <script>
+  const blobMorph = anime({
+    targets: '#blobPath',
+    d: [
+      {
+        value: `M46.4,-70.3C59.7,-61.7,69.2,-48.3,74.1,-34.5C79,-20.7,79.2,-6.6,75.4,6.8C71.6,20.1,63.9,32.7,54.5,44.4C45,56.1,33.9,66.9,20.7,71.6C7.6,76.2,-7.7,74.6,-21.4,69.1C-35.1,63.6,-47.2,54.2,-55.5,42.5C-63.9,30.8,-68.5,16.9,-67.3,3.9C-66.1,-9.1,-59.1,-18.1,-53.5,-28.2C-47.8,-38.2,-43.5,-49.2,-35.3,-59.3C-27.1,-69.4,-13.6,-78.6,1.5,-81C16.6,-83.4,33.2,-79,46.4,-70.3Z`
+      },
+      {
+        value: `M38.5,-65.6C49.3,-56.7,59.3,-49.4,65.7,-39.6C72.2,-29.8,75.2,-17.4,73.9,-5.9C72.5,5.6,66.9,16.2,60.5,28.1C54.1,40,46.8,53.1,35.8,61.4C24.8,69.6,10.1,73.1,-4.6,78.7C-19.4,84.3,-38.8,92,-52.2,85.2C-65.6,78.4,-73.1,57.1,-71.9,40C-70.7,23,-60.9,10.1,-56.7,-2.6C-52.6,-15.2,-54.2,-27.6,-50.1,-39.8C-46,-52,-36.1,-64,-23.2,-71.1C-10.3,-78.2,5.7,-80.3,20.6,-75.9C35.6,-71.5,49.6,-60.4,38.5,-65.6Z`
+      },
+      {
+        value: `M37.8,-61.5C48.2,-50.9,56.3,-41.8,62.4,-30.8C68.4,-19.8,72.3,-6.9,69.4,4.6C66.5,16.1,56.7,26.3,48.2,37.1C39.6,47.9,32.3,59.4,21.3,65.7C10.3,72,-4.5,73,-17.9,68.6C-31.3,64.2,-43.3,54.4,-52.3,42.6C-61.3,30.8,-67.2,16.9,-67.1,3.8C-67,-9.3,-60.8,-18.6,-55.7,-30.7C-50.5,-42.9,-46.5,-57.9,-36.1,-67.6C-25.8,-77.4,-9.9,-81.8,3.3,-84.8C16.5,-87.8,33,-89.5,37.8,-61.5Z`
+      }
+    ],
+    easing: 'easeInOutQuad',
+    duration: 8000,
+    direction: 'alternate',
+    loop: true
+  });
+</script>
+
+<!-- Toast -->
+<div id="toast-success" class="hidden fixed bottom-6 right-6 bg-green-600 text-white px-5 py-3 rounded shadow-md transition-all duration-300">
+  ✅ Message sent successfully!
+</div>
+
+<script>
+  const form = document.getElementById("contactForm");
+  const toast = document.getElementById("toast-success");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault(); // prevent redirect
+
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: formData
+      });
+
+      if (response.ok) {
+        form.reset();
+        toast.classList.remove("hidden");
+        toast.classList.add("opacity-100");
+
+        setTimeout(() => {
+          toast.classList.add("hidden");
+          toast.classList.remove("opacity-100");
+        }, 4000);
+      } else {
+        alert("Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      alert("Error occurred. Check your connection.");
+    }
+  });
+</script>
+
+
+</section>
+
+  <!-- Footer -->
+  <footer class="py-6 bg-[#0f172a] text-center text-gray-400">
+    <p class="text-sm">© 2024 Varun Deshmukh. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
