@@ -26,6 +26,19 @@
   ✅ Message sent successfully!
 </div>
 
+  <script>
+(function() {
+  window.userbirdq = window.userbirdq || [];
+  window.USERBIRD_SITE_ID = 'TlSAMDZx';
+  var script = document.createElement('script');
+  script.defer = true;
+  script.setAttribute('data-site', window.USERBIRD_SITE_ID);
+  script.src = "https://cdn.userbird.com/analytics.min.js";
+  var currentScript = document.currentScript || document.getElementsByTagName('script')[0];
+  currentScript.parentNode.insertBefore(script, currentScript);
+})();
+</script>
+
 </head>
 <body class="bg-[#0f172a] text-white font-sans tracking-wide">
 
@@ -72,7 +85,7 @@
         class="bg-indigo-500 hover:bg-indigo-600 transition px-6 py-3 rounded-full font-semibold text-white shadow-md hover:shadow-indigo-500/40 animate-pulse">
         🚀 View My Work
       </a>
-      <a href="assets/Varun_Deshmukh_Resume.pdf" download
+      <a href="/Varun_Deshmukh_Resume.pdf" download
         class="bg-white text-black font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-200 transition">
         📄 Download Resume
       </a>
@@ -89,14 +102,13 @@
   </div>
 
   <!-- Typewriter Effect Script -->
-  <script type="module">
-    import Typewriter from '/path/to/typewriter.js';
-    const heroTypewriter = new Typewriter('#typing-text', {
+  <script>
+    const typewriter = new Typewriter('#typing-text', {
       loop: true,
       delay: 75,
     });
 
-    heroTypewriter
+    typewriter
       .typeString('A passionate Computer Engineering student')
       .pauseFor(2000)
       .deleteAll()
@@ -128,7 +140,7 @@
                 transform="translate(100 100) scale(1.35)" />
             </clipPath>
           </defs>
-          <image href="assets/profile.jpg" clip-path="url(#blobClipPath)" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+          <image href="/profile.jpg" clip-path="url(#blobClipPath)" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
         </svg>
       </div>
     </div>
@@ -285,7 +297,7 @@
       <div class="bg-[#1e293b] p-6 rounded-lg shadow-lg hover:shadow-indigo-500/30 transition duration-300 hover:scale-105">
         <h4 class="text-xl font-semibold text-white mb-2">Chainsys Internship LOR</h4>
         <p class="text-gray-400 text-sm mb-3">Letter of Recommendation - Chainsys</p>
-        <a href="assets/Varun_Chainsys_LOR.pdf" target="_blank" class="text-indigo-400 hover:underline">View LOR</a>
+        <a href="/Varun_Chainsys_LOR.pdf" target="_blank" class="text-indigo-400 hover:underline">View LOR</a>
       </div>
 
       <div class="bg-[#1e293b] p-6 rounded-lg shadow-lg hover:shadow-indigo-500/30 transition duration-300 hover:scale-105">
@@ -305,6 +317,23 @@
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
 
+      <!-- EtherIgnis -->
+      <div class="bg-[#1e293b] p-6 rounded-lg shadow-lg hover:shadow-indigo-500/30 transition duration-300 hover:scale-105" data-aos="fade-up">
+        <h3 class="text-xl font-semibold text-white mb-2">EtherIgnis</h3>
+        <p class="text-gray-400 text-sm mb-3">
+          A Webpage for my  blockchain-based Start-Up
+        </p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="bg-indigo-600 text-sm px-2 py-1 rounded">React</span>
+          <span class="bg-green-600 text-sm px-2 py-1 rounded">Vite</span>
+          <span class="bg-gray-700 text-sm px-2 py-1 rounded">Tailwind</span>
+        </div>
+        <div class="flex gap-4">
+          <a href="https://etherignis.vercel.app" class="text-indigo-400 hover:underline">🔗 Live Demo</a>
+          <a href="https://github.com/varun08032004/etherignis" target="_blank" class="text-gray-400 hover:underline">📂 GitHub</a>
+        </div>
+      </div>
+
       <!-- EtherTrack -->
       <div class="bg-[#1e293b] p-6 rounded-lg shadow-lg hover:shadow-indigo-500/30 transition duration-300 hover:scale-105" data-aos="fade-up">
         <h3 class="text-xl font-semibold text-white mb-2">EtherTrack</h3>
@@ -322,6 +351,42 @@
           <a href="https://github.com/varun08032004/EtherTrack" target="_blank" class="text-gray-400 hover:underline">📂 GitHub</a>
         </div>
       </div>
+
+      <!-- EtherPulse - P2P Energy Trading -->
+<div class="bg-[#1e293b] p-6 rounded-lg shadow-lg hover:shadow-indigo-500/30 transition duration-300 hover:scale-105" data-aos="fade-up" data-aos-delay="400">
+  <h4 class="text-xl font-semibold text-white mb-2">EtherPulse</h4>
+  <p class="text-gray-300 text-sm mb-3">
+    A decentralized P2P energy trading platform enabling users to buy/sell surplus electricity using blockchain and smart contracts.
+  </p>
+  <div class="flex flex-wrap gap-2 mb-4">
+    <span class="bg-indigo-600 text-sm px-2 py-1 rounded">Solidity</span>
+    <span class="bg-blue-500 text-sm px-2 py-1 rounded">React</span>
+    <span class="bg-green-500 text-sm px-2 py-1 rounded">MongoDB</span>
+    <span class="bg-purple-600 text-sm px-2 py-1 rounded">Web3.js</span>
+  </div>
+  <div class="flex gap-4">
+    <a href="#" class="text-indigo-400 hover:underline">🔗 Live Demo</a>
+    <a href="https://github.com/varun08032004/EtherPulse" class="text-gray-400 hover:underline">📂 GitHub</a>
+  </div>
+</div>
+      <!-- EtherPulse -->
+<div class="bg-[#1e293b] p-6 rounded-lg shadow-lg hover:shadow-indigo-500/30 transition duration-300 hover:scale-105" data-aos="fade-up" data-aos-delay="300">
+  <h4 class="text-xl font-semibold text-white mb-2">EtherPulse</h4>
+  <p class="text-gray-300 text-sm mb-3">
+    An Blockchain-based React application for detecting water leaks and monitoring real-time water usage using sensors and live data dashboards.
+  </p>
+  <div class="flex flex-wrap gap-2 mb-4">
+    <span class="bg-blue-500 text-sm px-2 py-1 rounded">React</span>
+    <span class="bg-green-500 text-sm px-2 py-1 rounded">IoT</span>
+    <span class="bg-indigo-500 text-sm px-2 py-1 rounded">Sensors</span>
+    <span class="bg-yellow-500 text-sm px-2 py-1 rounded">Live Data</span>
+  </div>
+  <div class="flex gap-4">
+    <a href="#" class="text-indigo-400 hover:underline">🔗 Live Demo</a>
+    <a href="https://github.com/varun08032004/SmartWaterManagement" class="text-gray-400 hover:underline">📂 GitHub</a>
+  </div>
+</div>
+
 
       <!-- Business Dashboards -->
       <div class="bg-[#1e293b] p-6 rounded-lg shadow-lg hover:shadow-indigo-500/30 transition duration-300 hover:scale-105" data-aos="fade-up" data-aos-delay="100">
@@ -350,7 +415,7 @@
         <div class="flex flex-wrap gap-2 mb-4">
           <span class="bg-blue-500 text-sm px-2 py-1 rounded">Python</span>
           <span class="bg-red-500 text-sm px-2 py-1 rounded">Chatbot</span>
-          <span class="bg-green-500 text-sm px-2 py-1 rounded">Machine Learning</span>
+          <span class="bg-green-500 text-sm px-2 py-1 rounded">ML</span>
           <span class="bg-gray-700 text-sm px-2 py-1 rounded">Flask</span>
         </div>
         <div class="flex gap-4">
@@ -358,7 +423,7 @@
           <a href="https://github.com/varun08032004/SympathAI" target="_blank" class="text-gray-400 hover:underline">📂 GitHub</a>
         </div>
       </div>
-
+      
     </div>
   </div>
 </section>
@@ -382,8 +447,8 @@
 
     <!-- CTA Buttons -->
     <div class="flex flex-col sm:flex-row justify-center items-center gap-6" data-aos="fade-up" data-aos-delay="200">
-      <a href="#projects" class="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-full font-semibold text-white shadow-md hover:shadow-blue-500/40 transition-all duration-300">
-        🌿 Explore EtherTrack
+      <a href="https://etherignis.vercel.app" class="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-full font-semibold text-white shadow-md hover:shadow-blue-500/40 transition-all duration-300">
+        🌿 Explore EtherIgnis
       </a>
       <a href="#contact" class="bg-white text-gray-900 font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition-all duration-300">
         🔗 Connect with Me
@@ -455,26 +520,24 @@
   <script src="js/scripts.js"></script>
 
   <script>
-  if (!window.blobMorph) {
-    window.blobMorph = anime({
-      targets: '#blobPath',
-      d: [
-        {
-          value: `M46.4,-70.3C59.7,-61.7,69.2,-48.3,74.1,-34.5C79,-20.7,79.2,-6.6,75.4,6.8C71.6,20.1,63.9,32.7,54.5,44.4C45,56.1,33.9,66.9,20.7,71.6C7.6,76.2,-7.7,74.6,-21.4,69.1C-35.1,63.6,-47.2,54.2,-55.5,42.5C-63.9,30.8,-68.5,16.9,-67.3,3.9C-66.1,-9.1,-59.1,-18.1,-53.5,-28.2C-47.8,-38.2,-43.5,-49.2,-35.3,-59.3C-27.1,-69.4,-13.6,-78.6,1.5,-81C16.6,-83.4,33.2,-79,46.4,-70.3Z`
-        },
-        {
-          value: `M38.5,-65.6C49.3,-56.7,59.3,-49.4,65.7,-39.6C72.2,-29.8,75.2,-17.4,73.9,-5.9C72.5,5.6,66.9,16.2,60.5,28.1C54.1,40,46.8,53.1,35.8,61.4C24.8,69.6,10.1,73.1,-4.6,78.7C-19.4,84.3,-38.8,92,-52.2,85.2C-65.6,78.4,-73.1,57.1,-71.9,40C-70.7,23,-60.9,10.1,-56.7,-2.6C-52.6,-15.2,-54.2,-27.6,-50.1,-39.8C-46,-52,-36.1,-64,-23.2,-71.1C-10.3,-78.2,5.7,-80.3,20.6,-75.9C35.6,-71.5,49.6,-60.4,38.5,-65.6Z`
-        },
-        {
-          value: `M37.8,-61.5C48.2,-50.9,56.3,-41.8,62.4,-30.8C68.4,-19.8,72.3,-6.9,69.4,4.6C66.5,16.1,56.7,26.3,48.2,37.1C39.6,47.9,32.3,59.4,21.3,65.7C10.3,72,-4.5,73,-17.9,68.6C-31.3,64.2,-43.3,54.4,-52.3,42.6C-61.3,30.8,-67.2,16.9,-67.1,3.8C-67,-9.3,-60.8,-18.6,-55.7,-30.7C-50.5,-42.9,-46.5,-57.9,-36.1,-67.6C-25.8,-77.4,-9.9,-81.8,3.3,-84.8C16.5,-87.8,33,-89.5,37.8,-61.5Z`
-        }
-      ],
-      easing: 'easeInOutQuad',
-      duration: 8000,
-      direction: 'alternate',
-      loop: true
-    });
-  }
+  const blobMorph = anime({
+    targets: '#blobPath',
+    d: [
+      {
+        value: `M46.4,-70.3C59.7,-61.7,69.2,-48.3,74.1,-34.5C79,-20.7,79.2,-6.6,75.4,6.8C71.6,20.1,63.9,32.7,54.5,44.4C45,56.1,33.9,66.9,20.7,71.6C7.6,76.2,-7.7,74.6,-21.4,69.1C-35.1,63.6,-47.2,54.2,-55.5,42.5C-63.9,30.8,-68.5,16.9,-67.3,3.9C-66.1,-9.1,-59.1,-18.1,-53.5,-28.2C-47.8,-38.2,-43.5,-49.2,-35.3,-59.3C-27.1,-69.4,-13.6,-78.6,1.5,-81C16.6,-83.4,33.2,-79,46.4,-70.3Z`
+      },
+      {
+        value: `M38.5,-65.6C49.3,-56.7,59.3,-49.4,65.7,-39.6C72.2,-29.8,75.2,-17.4,73.9,-5.9C72.5,5.6,66.9,16.2,60.5,28.1C54.1,40,46.8,53.1,35.8,61.4C24.8,69.6,10.1,73.1,-4.6,78.7C-19.4,84.3,-38.8,92,-52.2,85.2C-65.6,78.4,-73.1,57.1,-71.9,40C-70.7,23,-60.9,10.1,-56.7,-2.6C-52.6,-15.2,-54.2,-27.6,-50.1,-39.8C-46,-52,-36.1,-64,-23.2,-71.1C-10.3,-78.2,5.7,-80.3,20.6,-75.9C35.6,-71.5,49.6,-60.4,38.5,-65.6Z`
+      },
+      {
+        value: `M37.8,-61.5C48.2,-50.9,56.3,-41.8,62.4,-30.8C68.4,-19.8,72.3,-6.9,69.4,4.6C66.5,16.1,56.7,26.3,48.2,37.1C39.6,47.9,32.3,59.4,21.3,65.7C10.3,72,-4.5,73,-17.9,68.6C-31.3,64.2,-43.3,54.4,-52.3,42.6C-61.3,30.8,-67.2,16.9,-67.1,3.8C-67,-9.3,-60.8,-18.6,-55.7,-30.7C-50.5,-42.9,-46.5,-57.9,-36.1,-67.6C-25.8,-77.4,-9.9,-81.8,3.3,-84.8C16.5,-87.8,33,-89.5,37.8,-61.5Z`
+      }
+    ],
+    easing: 'easeInOutQuad',
+    duration: 8000,
+    direction: 'alternate',
+    loop: true
+  });
 </script>
 
 <!-- Toast -->
@@ -482,7 +545,38 @@
   ✅ Message sent successfully!
 </div>
 
-<!-- Removed duplicate script block to fix redeclaration error -->
+<script>
+  const form = document.getElementById("contactForm");
+  const toast = document.getElementById("toast-success");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault(); // prevent redirect
+
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: formData
+      });
+
+      if (response.ok) {
+        form.reset();
+        toast.classList.remove("hidden");
+        toast.classList.add("opacity-100");
+
+        setTimeout(() => {
+          toast.classList.add("hidden");
+          toast.classList.remove("opacity-100");
+        }, 4000);
+      } else {
+        alert("Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      alert("Error occurred. Check your connection.");
+    }
+  });
+</script>
 
 
 </section>
@@ -494,4 +588,4 @@
 
 </body>
 </html>
-
+>>>>>>> 18f1bb337c5e63955ad17382f5685c9b85c71847
