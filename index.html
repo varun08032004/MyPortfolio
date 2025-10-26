@@ -89,13 +89,14 @@
   </div>
 
   <!-- Typewriter Effect Script -->
-  <script>
-    const typewriter = new Typewriter('#typing-text', {
+  <script type="module">
+    import Typewriter from '/path/to/typewriter.js';
+    const heroTypewriter = new Typewriter('#typing-text', {
       loop: true,
       delay: 75,
     });
 
-    typewriter
+    heroTypewriter
       .typeString('A passionate Computer Engineering student')
       .pauseFor(2000)
       .deleteAll()
@@ -454,24 +455,26 @@
   <script src="js/scripts.js"></script>
 
   <script>
-  const blobMorph = anime({
-    targets: '#blobPath',
-    d: [
-      {
-        value: `M46.4,-70.3C59.7,-61.7,69.2,-48.3,74.1,-34.5C79,-20.7,79.2,-6.6,75.4,6.8C71.6,20.1,63.9,32.7,54.5,44.4C45,56.1,33.9,66.9,20.7,71.6C7.6,76.2,-7.7,74.6,-21.4,69.1C-35.1,63.6,-47.2,54.2,-55.5,42.5C-63.9,30.8,-68.5,16.9,-67.3,3.9C-66.1,-9.1,-59.1,-18.1,-53.5,-28.2C-47.8,-38.2,-43.5,-49.2,-35.3,-59.3C-27.1,-69.4,-13.6,-78.6,1.5,-81C16.6,-83.4,33.2,-79,46.4,-70.3Z`
-      },
-      {
-        value: `M38.5,-65.6C49.3,-56.7,59.3,-49.4,65.7,-39.6C72.2,-29.8,75.2,-17.4,73.9,-5.9C72.5,5.6,66.9,16.2,60.5,28.1C54.1,40,46.8,53.1,35.8,61.4C24.8,69.6,10.1,73.1,-4.6,78.7C-19.4,84.3,-38.8,92,-52.2,85.2C-65.6,78.4,-73.1,57.1,-71.9,40C-70.7,23,-60.9,10.1,-56.7,-2.6C-52.6,-15.2,-54.2,-27.6,-50.1,-39.8C-46,-52,-36.1,-64,-23.2,-71.1C-10.3,-78.2,5.7,-80.3,20.6,-75.9C35.6,-71.5,49.6,-60.4,38.5,-65.6Z`
-      },
-      {
-        value: `M37.8,-61.5C48.2,-50.9,56.3,-41.8,62.4,-30.8C68.4,-19.8,72.3,-6.9,69.4,4.6C66.5,16.1,56.7,26.3,48.2,37.1C39.6,47.9,32.3,59.4,21.3,65.7C10.3,72,-4.5,73,-17.9,68.6C-31.3,64.2,-43.3,54.4,-52.3,42.6C-61.3,30.8,-67.2,16.9,-67.1,3.8C-67,-9.3,-60.8,-18.6,-55.7,-30.7C-50.5,-42.9,-46.5,-57.9,-36.1,-67.6C-25.8,-77.4,-9.9,-81.8,3.3,-84.8C16.5,-87.8,33,-89.5,37.8,-61.5Z`
-      }
-    ],
-    easing: 'easeInOutQuad',
-    duration: 8000,
-    direction: 'alternate',
-    loop: true
-  });
+  if (!window.blobMorph) {
+    window.blobMorph = anime({
+      targets: '#blobPath',
+      d: [
+        {
+          value: `M46.4,-70.3C59.7,-61.7,69.2,-48.3,74.1,-34.5C79,-20.7,79.2,-6.6,75.4,6.8C71.6,20.1,63.9,32.7,54.5,44.4C45,56.1,33.9,66.9,20.7,71.6C7.6,76.2,-7.7,74.6,-21.4,69.1C-35.1,63.6,-47.2,54.2,-55.5,42.5C-63.9,30.8,-68.5,16.9,-67.3,3.9C-66.1,-9.1,-59.1,-18.1,-53.5,-28.2C-47.8,-38.2,-43.5,-49.2,-35.3,-59.3C-27.1,-69.4,-13.6,-78.6,1.5,-81C16.6,-83.4,33.2,-79,46.4,-70.3Z`
+        },
+        {
+          value: `M38.5,-65.6C49.3,-56.7,59.3,-49.4,65.7,-39.6C72.2,-29.8,75.2,-17.4,73.9,-5.9C72.5,5.6,66.9,16.2,60.5,28.1C54.1,40,46.8,53.1,35.8,61.4C24.8,69.6,10.1,73.1,-4.6,78.7C-19.4,84.3,-38.8,92,-52.2,85.2C-65.6,78.4,-73.1,57.1,-71.9,40C-70.7,23,-60.9,10.1,-56.7,-2.6C-52.6,-15.2,-54.2,-27.6,-50.1,-39.8C-46,-52,-36.1,-64,-23.2,-71.1C-10.3,-78.2,5.7,-80.3,20.6,-75.9C35.6,-71.5,49.6,-60.4,38.5,-65.6Z`
+        },
+        {
+          value: `M37.8,-61.5C48.2,-50.9,56.3,-41.8,62.4,-30.8C68.4,-19.8,72.3,-6.9,69.4,4.6C66.5,16.1,56.7,26.3,48.2,37.1C39.6,47.9,32.3,59.4,21.3,65.7C10.3,72,-4.5,73,-17.9,68.6C-31.3,64.2,-43.3,54.4,-52.3,42.6C-61.3,30.8,-67.2,16.9,-67.1,3.8C-67,-9.3,-60.8,-18.6,-55.7,-30.7C-50.5,-42.9,-46.5,-57.9,-36.1,-67.6C-25.8,-77.4,-9.9,-81.8,3.3,-84.8C16.5,-87.8,33,-89.5,37.8,-61.5Z`
+        }
+      ],
+      easing: 'easeInOutQuad',
+      duration: 8000,
+      direction: 'alternate',
+      loop: true
+    });
+  }
 </script>
 
 <!-- Toast -->
@@ -479,38 +482,7 @@
   ✅ Message sent successfully!
 </div>
 
-<script>
-  const form = document.getElementById("contactForm");
-  const toast = document.getElementById("toast-success");
-
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault(); // prevent redirect
-
-    const formData = new FormData(form);
-
-    try {
-      const response = await fetch(form.action, {
-        method: "POST",
-        body: formData
-      });
-
-      if (response.ok) {
-        form.reset();
-        toast.classList.remove("hidden");
-        toast.classList.add("opacity-100");
-
-        setTimeout(() => {
-          toast.classList.add("hidden");
-          toast.classList.remove("opacity-100");
-        }, 4000);
-      } else {
-        alert("Something went wrong. Please try again.");
-      }
-    } catch (error) {
-      alert("Error occurred. Check your connection.");
-    }
-  });
-</script>
+<!-- Removed duplicate script block to fix redeclaration error -->
 
 
 </section>
@@ -522,3 +494,4 @@
 
 </body>
 </html>
+
